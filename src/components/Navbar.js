@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {NavLink} from 'react-router-dom';
-import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
+import {FiAlignRight,FiX,FiChevronDown } from "react-icons/fi";
 import logo from '../assets/MOROCK_logo_cropped.png';
 const Navbar = () => {
     const [isMenu, setisMenu] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
                     <nav className="main-nav " >
                     {/* Responsive Menu Button */}
                     {isResponsiveclose === true ? <> 
-                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiXCircle />   </span>
+                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiX />   </span>
                     </> : <> 
                         <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiAlignRight />   </span>
                     </>}
